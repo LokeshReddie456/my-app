@@ -1,11 +1,15 @@
 <form (ngSubmit)="login()">
     <div>
-        <label for="userID">User ID:</label>
-        <input type="text" id="userID" [(ngModel)]="userID" required>
+        <mat-form-field>
+            <mat-label for="userID">User ID:</mat-label>
+            <input matInput type="text" id="userID" [(ngModel)]="userID" name="userID" required>
+        </mat-form-field>
     </div>
     <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" [(ngModel)]="password" required>
+        <mat-form-field>
+            <mat-label for="password">Password:</mat-label>
+            <input matInput type="password" id="password" [(ngModel)]="password" name="password" required>
+        </mat-form-field>
     </div>
-    <button type="submit">Login</button>
+    <button mat-raised-button type="submit">Login</button>
 </form>

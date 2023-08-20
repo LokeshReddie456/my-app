@@ -1,6 +1,6 @@
-<h2>
+<h2 mat-title>
     Dashboard
 </h2>
-<ul>
-    <li *ngFor="let value of collection">{{ value }}</li>
-</ul>
+<mat-nav-list>
+    <mat-list-item *ngFor="let value of collection">{{ value }}</mat-list-item>
+</mat-nav-list>
