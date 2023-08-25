@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TaskListComponent } from './tasklist/tasklist.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
+import { TodoComponent } from './todo/todo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,12 +21,13 @@ import { MatListModule } from '@angular/material/list';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    TaskListComponent,
+    TodoComponent,
    
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
